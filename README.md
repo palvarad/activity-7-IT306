@@ -1,7 +1,7 @@
 # activity-7-IT306
 Activity Module 7
 
-*To-do before submission:*
+**To-do before submission:**
 
 * Add leader name
 
