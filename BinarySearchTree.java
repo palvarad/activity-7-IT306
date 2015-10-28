@@ -314,10 +314,48 @@ public class BinarySearchTree implements Iterable {
 		return middle+left_subtree + right_subtree; 
 	}
 	
-	
+	/**
+	 * traverses and prints the subtree in the order of left - right- root
+	 * @param p
+	 * @return
+	 */
 	public String postorder(TreeNode p){
 		//TODO: traverse the tree postorder and print the node by calling task(...) method
-		return "Acitivity 7: Complete \" postorder \" method in class BinarySearchTree.java";
+		//If to check if the tree node is empty.
+		if(p == null){
+			return "Empty";
+		}
+		
+		//String to represent the left node of a subtree.
+		String left_subtree = "";
+		//String to represent the right node of a subtree.
+		String right_subtree = "";
+		
+		//Similar to in order traverse, because they both start on the left side.
+		//If the node to the left is not empty then make a recursive call to get that left node.
+		if(p.getLeft() != null){
+			left_subtree = postorder(p.getLeft());
+			task(p);
+		}
+		
+		//Again similar to in order traverse, but the order is different because we need to go right and not root.
+		if(p.getRight() != null){
+			right_subtree = postorder(p.getRight());
+			task(p);
+		}
+		
+		//After the recursive calls are done then this is executed and this represents 'root'. 
+		String middle = p.getElement() + ", ";
+		task(p);
+		
+		/**
+		 * How I think this method works: it keeps doing a left recursive call until there are no more left nodes.
+		 * The last left node becomes the value of left_subtree. The same thing with the right_subtree.
+		 * Finally, the root is printed and all three values are returned.
+		 */
+		return left_subtree + right_subtree + middle;
+		
+		//return "Acitivity 7: Complete \" postorder \" method in class BinarySearchTree.java";
 	}
 	
 	
