@@ -1,7 +1,7 @@
 /**
  * Group Members: Luis Velascco, Larry Hong, Peter Alvarado Nunez.
- * Group Leader: 
- * Date: 10-27-2015
+ * Group Leader: Peter Alvarado Nunez
+ * Date: 10-29-2015
  * Course: IT 306 - 001
  * Class Activity 7
  */
