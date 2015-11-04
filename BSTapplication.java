@@ -16,9 +16,6 @@ public class BSTapplication {
 	//TODO delete 12, 19,-4
 	//TODO traverse from the very root
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		
 		String menu= "1- Insert \n2- Delete \n3- Search \n4- Traverse \n5- Exit."; 
