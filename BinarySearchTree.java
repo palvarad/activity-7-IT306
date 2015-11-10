@@ -6,7 +6,7 @@
  * Class Activity 7
  */
 
-package activityModule7;
+
 
 import java.util.*;
 

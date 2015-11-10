@@ -6,7 +6,7 @@
  * Class Activity 7
  */
 
-package activityModule7;
+
 
 public class TreeNode {
 	private double element; //this is data

@@ -6,8 +6,10 @@
  * Class Activity 7
  */
 
-package activityModule7;
 
+/**
+ * This is a testing comment
+ */
 import javax.swing.JOptionPane;
 
 public class BSTapplication {
